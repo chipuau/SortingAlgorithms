@@ -1,3 +1,5 @@
+/*Selection Sort: Runs Selection Sort Algorithm with O(n^2) runtime*/
+
 #include "stdafx.h"
 #include "SelectionSort.h"
 
@@ -49,9 +51,12 @@ namespace SortingAlgorithm
 		//Print Sorted Array: 			
 		for (auto l : tempArray)
 		{
-			std::cout << l << " "; 
-			std::cout << std::endl; 
+			std::cout << l << " ";  
 		}
+
+		std::cout << std::endl;
+
+		return; 
 	}
 
 }

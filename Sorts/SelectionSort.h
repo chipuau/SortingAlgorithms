@@ -1,3 +1,5 @@
+/*Selection Sort: Runs Selection Sort Algorithm with O(n^2) runtime*/
+
 #pragma once
 #include <vector>
 

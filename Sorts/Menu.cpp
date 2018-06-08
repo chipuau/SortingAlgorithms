@@ -26,7 +26,8 @@ namespace SortingAlgorithm
 	void Menu::PrintSortingMenu()
 	{
 		std::cout << "Please Select a Sorting Algorithm: " << std::endl; 
-		std::cout << "1. Selection Sort" << std::endl; 	
+		std::cout << "1. Selection Sort" << std::endl;
+		std::cout << "2. Bubble Sort" << std::endl;
 	}
 
 }
