@@ -23,26 +23,25 @@ namespace SortingAlgorithm
 		}
 
 		int temp = 0;
-		auto tempArray = userArray; 
-		 
+		
 		//Traverse throught the array: 
-		for (int j = 0; j < tempArray.size(); j++)
+		for (int j = 0; j < userArray.size(); j++)
 		{
-			for (int i = 1; i < tempArray.size(); i++)
+			for (int i = 1; i < userArray.size(); i++)
 			{
 				//If the element in the current index is smaller
 				//than the element in the previous index, swap values: 
-				if (tempArray[i] < tempArray[i - 1])
+				if (userArray[i] < userArray[i - 1])
 				{
-					temp = tempArray[i - 1];
-					tempArray[i - 1] = tempArray[i];
-					tempArray[i] = temp;
+					temp = userArray[i - 1];
+					userArray[i - 1] = userArray[i];
+					userArray[i] = temp;
 				}
 			}
 		}
 
 		//Print Sorted Array: 			
-		for (auto l : tempArray)
+		for (auto l : userArray)
 		{
 			std::cout << l << " ";
 		}

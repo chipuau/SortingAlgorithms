@@ -25,31 +25,29 @@ namespace SortingAlgorithm
 			return; 
 		}
 
-		auto tempArray = userArray; 
-
 		//Traverse the Array
-		for (int i = 0; i < tempArray.size() - 1 ; i++)
+		for (int i = 0; i < userArray.size() - 1 ; i++)
 		{
 			//Set Index of Smallest Element to the Current Index
 			smallest = i; 
 
 			//Check for an Index Containing a Smaller Value
-			for (int j = i + 1; j < tempArray.size(); j++)
+			for (int j = i + 1; j < userArray.size(); j++)
 			{
-				if (tempArray[j] < tempArray[smallest])
+				if (userArray[j] < userArray[smallest])
 				{
 					smallest = j; 
 				}
 			}
 
 			//Swap Current Value with Smaller Value If Found
-			temp = tempArray[i]; 
-			tempArray[i] = tempArray[smallest]; 
-			tempArray[smallest] = temp; 
+			temp = userArray[i]; 
+			userArray[i] = userArray[smallest]; 
+			userArray[smallest] = temp; 
 		}
 
 		//Print Sorted Array: 			
-		for (auto l : tempArray)
+		for (auto l : userArray)
 		{
 			std::cout << l << " ";  
 		}
